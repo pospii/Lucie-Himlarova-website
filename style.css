@@ -371,7 +371,9 @@ body{
 	padding-bottom: 20px;
 }
 .Feautes p{
-	font-size: 17px;
+	font-size: 18px;
+	
+	color: #2C2D3F;
 }
 .Feautes.index2{
 	padding-top:100px;
@@ -857,11 +859,11 @@ q {
 	text-align: justify;
 }
 .cenik .section-title h3{
-	font-size: 20px;
+	font-size: 21px;
 	color: #2d2d2d;
 }
 .cenik .section-title p{
 	font-size: 16px;
-	color: #5f5f5f;
+	color: #2e2e2e;
 	margin-bottom: 50px;
 }
