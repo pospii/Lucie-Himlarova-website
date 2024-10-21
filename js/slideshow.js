@@ -1,38 +1,21 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex = 0;
 
-var timer;
+  function showSlides() {
+    let slides = document.getElementsByClassName("mySlides");
+    // Skryje všechny slidy
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    // Zvýší index o 1 (cykluje přes slidy)
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1; // Zpět na první slide
+    }
+    // Zobrazí aktuální slide
+    slides[slideIndex - 1].style.display = "block";
+    // Další slide po 15 sekundách
+    setTimeout(showSlides, 7000);
+  }
 
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-  if (timer) {
-    clearTimeout(timer);
-  }
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  timer = setTimeout(function () {
-    plusSlides(1);
-  }, 15000);
-}
+  // Spustí slideshow
+  showSlides();

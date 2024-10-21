@@ -540,7 +540,7 @@ body {
 ===========================*/
 .contact-us .inner {
 	box-shadow: 0px 0px 10px #00000024;
-	border-radius: 5px;
+	border-radius: 10px;
 	overflow: hidden;
 
 }
@@ -599,7 +599,7 @@ body {
 	color: #555;
 	font-size: 14px;
 	font-weight: 400;
-	border-radius: 4px;
+	border-radius: 8px;
 }
 
 .contact-us .form .form-group textarea {
@@ -610,7 +610,7 @@ body {
 	color: #555;
 	font-size: 14px;
 	font-weight: 400;
-	border-radius: 4px;
+	border-radius: 8px;
 }
 
 .contact-us .form .form-group.login-btn {
@@ -635,7 +635,7 @@ body {
 }
 
 .contact-us img {
-	padding: 55px 20px 55px 0px;
+	padding: 20px 30px 20px 0px;
 }
 
 .contact-us .contact-info {
@@ -885,69 +885,40 @@ body {
 
 /* slideNav */
 
-#dole {
-	position: -webkit-sticky;
-	position: sticky;
-	width: 100%;
-	height: auto;
-	box-sizing: border-box;
+#dole{
+	box-shadow: 0px 5px 20px 0px #ffd6cb;
 }
 
 .slideshow-container {
 	position: -webkit-sticky;
 	position: sticky;
 	width: 920px;
+
 	margin: auto;
-	box-sizing: border-box;
-	font-size: 11px;
+	height: 150px;
+
+	padding: 30px;
+
+	border-radius: 8px;
+
 }
 
 .mySlides {
 	display: none;
-	padding: 40px 50px 15px 50px;
 	text-align: center;
+	
 }
-
-.dot, .slideNav a {
-	height: 12px;
-	width: 12px;
-	float: left;
-	display: block;
-	margin: 1px 8px;
-	cursor: pointer;
-}
-
-.slideNav {
-	width: 260px;
-	margin: auto auto 80px auto;
-	text-align: center;
-}
-
-.dot {
-	background-color: rgb(235, 235, 235);
-	border: solid 3px #f78769;
-	border-radius: 10px;
-}
-
-.next, .prev {
-	color: #959595;
-}
-
-.dot.active {
-	background-color: #f78869;
-}
-
-q {
-	font-style: italic;
+.mySlides p {
 	font-weight: 300;
-	font-size: 16px;
+	font-size: 17px;
+	font-style: italic;
 }
 
-.author {
+p.vite-ze{
 	color: #717171;
-	font-size: 15px;
-	font-weight: 400;
-	margin-top: 10px;
+	font-size: 17px;
+	font-weight: 500;
+	margin-bottom: 15px;
 }
 
 @media screen and (max-width: 940px) {
@@ -961,33 +932,45 @@ q {
 		width: 100%;
 	}
 
-	q, .author {
-		font-size: 1.4em;
-	}
 }
 
-.cenik .section-title {
+.boxik .section-title {
 	margin-top: 80px;
 	text-align: justify;
 }
 
-.cenik .section-title h2 {
+.boxik .section-title  h2 {
 	font-size: 23px;
 	text-transform: none;
+	text-align: left;
+}
+.boxik .section-title p {
+	font-size: 17px;
 }
 
-.cenik .section-title p {
-	font-size: 17px;
+.boxik .section-title .odstavec {
 	margin-bottom: 30px;
 }
 
-.cenik .section-title ul li {
+.boxik .section-title .odstavec:last-child {
+	margin-bottom: 80px;
+}
+
+.boxik .odstavec{
+	width: 100%;
+	padding: 30px;
+	box-shadow: 0 9px 37px #ffd6cb;
+	color: #555;
+	border-radius: 15px;
+}
+
+.boxik .section-title ul li {
 	list-style-type: disc;
 	margin-left: 18px;
 	font-size: 15px;
 }
 
-.cenik .section-title ul {
+.boxik .section-title ul {
 	margin-bottom: 40px;
 	margin-top: -15px;
 }
