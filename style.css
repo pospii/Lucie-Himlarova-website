@@ -452,11 +452,13 @@ body {
 =========================*/
 .fun-facts {
 	position: relative;
-	margin-bottom: 20px;
+	margin: 0 auto 60px;
+	width: 85%;
+	border-radius: 30px;
 }
 
 .fun-facts.section {
-	padding: 120px 0;
+	padding: 100px 0;
 }
 
 .fun-facts {
@@ -894,14 +896,9 @@ body {
 	position: -webkit-sticky;
 	position: sticky;
 	width: 920px;
-
 	margin: auto;
-	height: 150px;
-
-	padding: 30px;
-
-	border-radius: 8px;
-
+	height: auto;
+	padding: 50px;
 }
 
 .mySlides {
@@ -910,15 +907,15 @@ body {
 	
 }
 .mySlides p {
-	font-weight: 300;
-	font-size: 17px;
+	font-weight: 400;
+	font-size: 18px;
 	font-style: italic;
 }
 
 p.vite-ze{
 	color: #717171;
-	font-size: 17px;
-	font-weight: 500;
+	font-size: 18px;
+	font-weight: 600;
 	margin-bottom: 15px;
 }
 
@@ -947,6 +944,7 @@ p.vite-ze{
 }
 .boxik .section-title p {
 	font-size: 17px;
+	color: #555;
 }
 
 .boxik .section-title .odstavec {
@@ -959,7 +957,7 @@ p.vite-ze{
 
 .boxik .odstavec{
 	width: 100%;
-	padding: 30px;
+	padding: 40px;
 	box-shadow: 0 9px 37px #ffd6cb;
 	color: #555;
 	border-radius: 15px;
@@ -967,11 +965,11 @@ p.vite-ze{
 
 .boxik .section-title ul li {
 	list-style-type: disc;
+	
 	margin-left: 18px;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 .boxik .section-title ul {
-	margin-bottom: 40px;
-	margin-top: -15px;
+margin-top: 15px;
 }
