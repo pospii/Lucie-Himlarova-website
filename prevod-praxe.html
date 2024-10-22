@@ -125,21 +125,35 @@
       <div class="row">
         <div class="col-12">
           <div class="section-title">
+            <div class="odstavec">
             <h2>Převod fyzické osoby na společnost s ručením omezeným</h2>
-              <p>
-                Celý proces převodu soukromé lékařské praxe na společnost s ručením omezeným je komplikovaný a hlavně
-                časově náročný. Je nutné provádět všechny potřebné kroky v určité posloupnosti. Prvotním krokem je
-                sepsání zakladatelské listiny, finálním pak podání žádostí o uzavření nového smluvního vztahu na
+            <ul>
+              <li>Zpracování provozního řádu</li>
+              <li>Vyřízení žádostí a podkladů na Krajský úřad</li>
+              <li>Zprostředkování kontaktu s notářskou kanceláří</li>
+              <li>Zaslání žádostí a potřebné dokumentace na zdravotní pojišťovny</li>
+            </ul>  
+            </div>
+            <div class="prevod">
+            <p>
+                Celý proces převodu soukromé lékařské praxe na společnost s ručením omezeným je <strong>komplikovaný</strong> a hlavně
+                <strong>časově náročný</strong>. Je nutné provádět všechny potřebné kroky v určité posloupnosti. Prvotním krokem je
+                <strong>sepsání zakladatelské listiny</strong>, finálním pak <strong>podání žádostí o uzavření nového smluvního vztahu</strong> na
                 zdravotní pojišťovny.
               </p>
-              <p><strong>Co vás čeká...</strong><br>
+              <p><b>Co vás čeká...</b><br><br> </p>
+              <p class="odstavec">
                 Úvodní schůzka, kde Vás navštívím v ordinaci a probereme Vaše požadavky (přibližně jedna hodina Vašeho
-                času).<br/><br/>
-                Schůzka u notáře (maximálně jedna hodina Vašeho času).<br/><br/>
+                času).
+              </p>
+              <p class="odstavec">
+                Schůzka u notáře (maximálně jedna hodina Vašeho času). 
+              </p>
+              <p class="odstavec">
                 Správné vyplnění a podání všech dokumentů na příslušné úřady, zajištění náležitých příloh k žádostem,
                 komunikaci s úředníky ….. vše zajistím za Vás.
               </p>
-            
+            </div>
           </div>
         </div>
       </div>
@@ -273,6 +287,27 @@
   <!-- Main JS -->
   <script src="js/main.js"></script>
   <script src="js/slideshow.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const odstavce = document.querySelectorAll(".prevod .odstavec");
+  
+      function checkVisibility() {
+        const triggerBottom = window.innerHeight / 5 * 4;
+  
+        odstavce.forEach((odstavec) => {
+          const boxTop = odstavec.getBoundingClientRect().top;
+  
+          if (boxTop < triggerBottom) {
+            odstavec.classList.add("show");
+          }
+        });
+      }
+  
+      window.addEventListener("scroll", checkVisibility);
+      checkVisibility(); // Spuštění při načtení stránky
+    });
+  </script>
+  
 </body>
 
 </html>

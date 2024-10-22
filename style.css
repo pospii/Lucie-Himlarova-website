@@ -199,7 +199,7 @@ body {
 	-moz-transition: all 0.4s ease;
 	transition: all 0.4s ease;
 	animation: fadeInDown 0.5s both 0.1s;
-	box-shadow: 0px 0px 13px #00000054;
+	box-shadow: 0px -3px 20px 0px #ffd6cb
 }
 
 /*=========================
@@ -295,7 +295,7 @@ body {
 	position: relative;
 	text-align: left;
 	z-index: 3;
-	border-radius: 5px;
+	border-radius: 15px;
 	background: #f78769;
 	-webkit-transition: all .3s ease-out 0s;
 	-moz-transition: all .3s ease-out 0s;
@@ -543,7 +543,7 @@ body {
 ===========================*/
 .contact-us .inner {
 	box-shadow: 0px 0px 10px #00000024;
-	border-radius: 10px;
+	border-radius: 15px;
 	overflow: hidden;
 
 }
@@ -602,7 +602,7 @@ body {
 	color: #555;
 	font-size: 14px;
 	font-weight: 400;
-	border-radius: 8px;
+	border-radius: 15px;
 }
 
 .contact-us .form .form-group textarea {
@@ -613,7 +613,7 @@ body {
 	color: #555;
 	font-size: 14px;
 	font-weight: 400;
-	border-radius: 8px;
+	border-radius: 15px;
 }
 
 .contact-us .form .form-group.login-btn {
@@ -649,7 +649,7 @@ body {
 	background: #f78769;
 	padding: 35px 40px;
 	height: 110px;
-	border-radius: 10px;
+	border-radius: 15px;
 	position: relative;
 	-webkit-transition: all .3s ease-out 0s;
 	-moz-transition: all .3s ease-out 0s;
@@ -963,13 +963,87 @@ p.vite-ze{
 	border-radius: 15px;
 }
 
-.boxik .section-title ul li {
-	list-style-type: disc;
-	
-	margin-left: 18px;
-	font-size: 16px;
+.boxik .odstavec p {
+	line-height: 1.6em;
+	font-weight: 400;
 }
 
-.boxik .section-title ul {
-margin-top: 15px;
+.boxik .odstavec p i {
+	font-size: 15px;
 }
+
+.boxik .section-title ul li {
+	font-size: 17px;
+	font-weight: 400;
+	padding-left: 25px; /* Prostor pro ikonu vlevo od textu */
+  text-indent: -33px; /* Zarovná text, aby se vyhnul ikoně */
+  line-height: 1.8em;
+  text-align: left;
+}
+
+.boxik .section-title ul li::before {
+	content: "\eed8";
+	font-family: "IcoFont";
+	font-size: 23px;
+	margin-right: 10px; 
+  	color: #f78769; 
+}
+
+.prevod p {
+	margin-top: 40px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.6em;
+}
+
+.prevod p:first-child{
+	margin-top: 80px;
+	margin-bottom: 80px;
+	line-height: 1.9em;
+}
+
+.prevod b{
+	font-size: 18.5px;
+}
+
+
+.prevod .odstavec {
+	padding: 20px;
+	border-radius: 20px;
+	margin: 0px;
+}
+
+.prevod p:nth-child(4) {
+	margin-left: 30px;
+}
+
+.prevod p:nth-child(5) {
+	margin-left: 60px;
+}
+
+.prevod strong, .odstavec strong{
+	color: #f78769;
+}
+
+@keyframes slideInRight {
+	from {
+	  transform: translateX(100%);
+	  opacity: 0;
+	}
+	to {
+	  transform: translateX(0);
+	  opacity: 1;
+	}
+  }
+  
+  .prevod .odstavec {
+	opacity: 0;
+	transition: opacity 0.5s ease-out;
+  }
+  
+  /* Třída pro aktivaci animace */
+  .prevod .odstavec.show {
+	animation: slideInRight 0.8s ease-out forwards;
+  }
+  
+  
