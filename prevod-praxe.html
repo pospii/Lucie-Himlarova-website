@@ -106,7 +106,7 @@
       <div class="bread-inner">
         <div class="row">
           <div class="col-12">
-            <h1>Převod praxe na s.r.o.</h1>
+            <h1>Převod praxe na s.r.o.,<br>změny v obchodní společnosti</h1>
             <ul class="bread-list">
               <li><a href="index.html">Úvod</a></li>
               <li><i class="icofont-simple-right"></i></li>
@@ -126,19 +126,22 @@
         <div class="col-12">
           <div class="section-title">
             <div class="odstavec">
-            <h2>Převod fyzické osoby na společnost s ručením omezeným</h2>
-            <ul>
-              <li>Zpracování provozního řádu</li>
-              <li>Vyřízení žádostí a podkladů na Krajský úřad</li>
-              <li>Zprostředkování kontaktu s notářskou kanceláří</li>
-              <li>Zaslání žádostí a potřebné dokumentace na zdravotní pojišťovny</li>
-            </ul>  
+              <h2>Převod fyzické osoby na společnost s ručením omezeným</h2>
+              <ul>
+                <li>Zpracování provozního řádu</li>
+                <li>Vyřízení žádostí a podkladů na Krajský úřad</li>
+                <li>Zprostředkování kontaktu s notářskou kanceláří</li>
+                <li>Zaslání žádostí a potřebné dokumentace na zdravotní pojišťovny</li>
+              </ul>
             </div>
             <div class="prevod">
-            <p>
-                Celý proces převodu soukromé lékařské praxe na společnost s ručením omezeným je <strong>komplikovaný</strong> a hlavně
-                <strong>časově náročný</strong>. Je nutné provádět všechny potřebné kroky v určité posloupnosti. Prvotním krokem je
-                <strong>sepsání zakladatelské listiny</strong>, finálním pak <strong>podání žádostí o uzavření nového smluvního vztahu</strong> na
+              <p>
+                Celý proces převodu soukromé lékařské praxe na společnost s ručením omezeným je
+                <strong>komplikovaný</strong> a hlavně
+                <strong>časově náročný</strong>. Je nutné provádět všechny potřebné kroky v určité posloupnosti.
+                Prvotním krokem je
+                <strong>sepsání zakladatelské listiny</strong>, finálním pak <strong>podání žádostí o uzavření nového
+                  smluvního vztahu</strong> na
                 zdravotní pojišťovny.
               </p>
               <p><b>Co vás čeká...</b><br><br> </p>
@@ -147,7 +150,8 @@
                 času).
               </p>
               <p class="odstavec">
-                Schůzka u notáře (maximálně jedna hodina Vašeho času). 
+                Schůzka s notářkou (max. 30 min. Vašeho času). Celý proces možno realizovat ve Vaší ambulanci, odpadá
+                Vám návštěva notářské kanceláře. S <a href="https://www.notarka-opava.cz/">paní notářkou</a> tak nabízíme nadstandartní péči :).
               </p>
               <p class="odstavec">
                 Správné vyplnění a podání všech dokumentů na příslušné úřady, zajištění náležitých příloh k žádostem,
@@ -168,34 +172,26 @@
       </div>
       <div class="mySlides">
         <p class="vite-ze">Víte, že...</p>
-        <p
-          >Při převzetí lékařské praxe jste převzali také historii vykazování
+        <p>Při převzetí lékařské praxe jste převzali také historii vykazování
           svého předchůdce vč. podmínek úhrad. Víte, že lze požádat zdravotní
-          pojišťovny o zlepšení těchto podmínek?</q
-        >
+          pojišťovny o zlepšení těchto podmínek?</q>
       </div>
       <div class="mySlides">
         <p class="vite-ze">Víte, že...</p>
-        <p
-          >Opravné dávky vám zlepší bilanci ve formě získání zpětné úhrady a
+        <p>Opravné dávky vám zlepší bilanci ve formě získání zpětné úhrady a
           současně zlepší podmínky pro budoucí úhradu za poskytnutou zdravotní
-          péči?</q
-        >
+          péči?</q>
       </div>
       <div class="mySlides">
         <p class="vite-ze">Víte, že...</p>
-        <p
-          >Opravné dávky mohou ovlivnit výši hodnoty PURO i počet unikátních
-          rodných čísel?</q
-        >
+        <p>Opravné dávky mohou ovlivnit výši hodnoty PURO i počet unikátních
+          rodných čísel?</q>
       </div>
       <div class="mySlides">
         <p class="vite-ze">Víte, že...</p>
-        <p
-          >Správně sepsanou námitkou proti regulacím či krácení úhrad můžete
-          získat zpět svůj nárok za poskytnutou zdravotní péči.</q
-        >
-      </div>        
+        <p>Správně sepsanou námitkou proti regulacím či krácení úhrad můžete
+          získat zpět svůj nárok za poskytnutou zdravotní péči.</q>
+      </div>
     </div>
   </section>
   <!-- Footer Area -->
@@ -290,24 +286,24 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const odstavce = document.querySelectorAll(".prevod .odstavec");
-  
+
       function checkVisibility() {
         const triggerBottom = window.innerHeight / 5 * 4;
-  
+
         odstavce.forEach((odstavec) => {
           const boxTop = odstavec.getBoundingClientRect().top;
-  
+
           if (boxTop < triggerBottom) {
             odstavec.classList.add("show");
           }
         });
       }
-  
+
       window.addEventListener("scroll", checkVisibility);
       checkVisibility(); // Spuštění při načtení stránky
     });
   </script>
-  
+
 </body>
 
 </html>
