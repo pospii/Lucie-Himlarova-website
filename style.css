@@ -989,6 +989,35 @@ p.vite-ze{
   	color: #f78769; 
 }
 
+.images {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+	box-shadow: 0 9px 37px #ffd6cb;
+	background-color: #fff;
+	margin: 50px;
+}
+  
+.image-container {
+	width: 80%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.image-container img {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+.image-container img.active {
+	opacity: 1;
+  } 
+
 .prevod p {
 	margin-top: 40px;
 	font-weight: 400;
@@ -1045,5 +1074,6 @@ p.vite-ze{
   .prevod .odstavec.show {
 	animation: slideInRight 0.8s ease-out forwards;
   }
-  
-  
+
+
+

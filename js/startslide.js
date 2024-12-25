@@ -16,6 +16,6 @@ window.onload = function(){
   // První nastavení pozadí
   slider.style.backgroundImage = `url(${images[currentIndex]})`;
 
-  // Nastavení intervalu pro změnu každých 5 sekund
+  // Nastavení intervalu pro změnu každých 7 sekund
   setInterval(changeBackground, 7000);
 }

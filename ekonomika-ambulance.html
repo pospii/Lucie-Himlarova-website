@@ -130,7 +130,8 @@
             <p><strong>Pomohu Vám nastavit správnost a komplexnost vykázaných dokladů a zlepšit podmínky úhrad ze strany
                 pojišťoven. Má činnost zahrnuje následující portfolio služeb.
               </strong></p><br><br>
-            <div class="odstavec">
+            
+              <div class="odstavec">
               <h2>Roční vyúčtování</h2>
               <ul>
                 <li>Kontrola správnosti výpočtu</li>
@@ -139,9 +140,11 @@
                 <li>Sepsání odvolání proti krácení úhrady/regulacím</li>
               </ul>
             </div>
-            <div>
-              <img src="img/vyúčtovánírbp.jpg" alt="">
-              <img src="img/vyúčtováníVZP.jpg" alt="">
+            <div class="images" id="section1">
+              <div class="image-container">
+              <img class="lazy" data-src="img/vyúčtovánírbp.jpg" alt="">
+              <img class="lazy" data-src="img/vyúčtováníVZP.jpg" alt="">
+              </div>
             </div>
             <div class="odstavec">
               <h2>Portál zdravotních pojišťoven</h2>
@@ -153,9 +156,11 @@
               <p><i>Pracuji např. s programy <strong>SmartMEDIX</strong>, <strong>Medicus</strong> a
                   <strong>Amicus</strong></i></p>
             </div>
-            <div>
-              <img src="img/Zúčtovací zpráva.jpg" alt="">
-              <img src="img/portalZP.jpg" alt="">
+            <div class="images" id="section2">
+              <div class="image-container">
+              <img class="lazy" data-src="img/Zúčtovací zpráva.jpg" alt="">
+              <img class="lazy" data-src="img/portalZP.jpg" alt="">
+              </div>
             </div>
             <div class="odstavec">
               <h2>Písemnosti</h2>
@@ -297,6 +302,43 @@
   <!-- Main JS -->
   <script src="js/main.js"></script>
   <script src="js/slideshow.js"></script>
+  <script>
+    // Funkce pro inicializaci lazy loading a střídání obrázků pro jednu sekci
+    function initializeImageSection(sectionId) {
+      const section = document.querySelector(`#${sectionId}`);
+      const lazyImages = section.querySelectorAll('.lazy');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.dataset.src;
+            img.classList.remove('lazy');
+            observer.unobserve(img);
+          }
+        });
+      });
+
+      lazyImages.forEach(img => observer.observe(img));
+
+      // Střídání obrázků
+      const images = section.querySelectorAll('.image-container img');
+      let currentIndex = 0;
+
+      function changeImage() {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('active');
+      }
+
+      // Spuštění střídání
+      images[0].classList.add('active');
+      setInterval(changeImage, 7000);
+    }
+
+    // Inicializace pro obě sekce
+    initializeImageSection('section1');
+    initializeImageSection('section2');
+  </script>
 </body>
 
 </html>
