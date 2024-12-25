@@ -932,35 +932,40 @@ p.vite-ze{
 
 }
 
-.boxik .section-title {
+.boxik .sections {
 	margin-top: 80px;
 	text-align: justify;
 }
 
-.boxik .section-title  h2 {
+.boxik .sections  h2 {
 	font-size: 23px;
 	text-transform: none;
 	text-align: left;
+	font-weight: 600;
+	margin-bottom: 10px;
+	position: relative;
+	color: #2C2D3F;
 }
-.boxik .section-title p {
+.boxik .sections p {
 	font-size: 17px;
 	color: #555;
 }
 
-.boxik .section-title .odstavec {
-	margin-bottom: 30px;
+.boxik .sections .odstavec {
+	margin-bottom: 60px;
 }
 
-.boxik .section-title .odstavec:last-child {
+.boxik .sections .odstavec:last-child {
 	margin-bottom: 80px;
 }
 
 .boxik .odstavec{
-	width: 100%;
+	width: 50%;
 	padding: 40px;
 	box-shadow: 0 9px 37px #ffd6cb;
 	color: #555;
 	border-radius: 15px;
+	background-color: white;
 }
 
 .boxik .odstavec p {
@@ -972,7 +977,7 @@ p.vite-ze{
 	font-size: 15px;
 }
 
-.boxik .section-title ul li {
+.boxik .sections ul li {
 	font-size: 17px;
 	font-weight: 400;
 	padding-left: 25px; /* Prostor pro ikonu vlevo od textu */
@@ -981,7 +986,7 @@ p.vite-ze{
   text-align: left;
 }
 
-.boxik .section-title ul li::before {
+.boxik .sections ul li::before {
 	content: "\eed8";
 	font-family: "IcoFont";
 	font-size: 23px;
@@ -989,18 +994,32 @@ p.vite-ze{
   	color: #f78769; 
 }
 
+.section-portfolio{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+	height: 70vh;
+	margin-bottom: 50px;
+}
+
+#centre{
+	margin-right: auto;
+	margin-left: auto;
+}
+
 .images {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 50%;
 	height: 50vh;
-	box-shadow: 0 9px 37px #ffd6cb;
-	background-color: #fff;
-	margin: 50px;
+	background-color: white;
 }
   
 .image-container {
-	width: 80%;
+	width: 90%;
 	height: 100%;
 	position: relative;
 	overflow: hidden;
@@ -1017,6 +1036,29 @@ p.vite-ze{
 .image-container img.active {
 	opacity: 1;
   } 
+
+.uvodni-text{
+	padding: 0 170px;
+	margin: 150px auto 70px;
+	text-align: center;
+}
+
+.sections .uvodni-text p{
+	font-size: 22px;
+	line-height: 1.4em;
+	font-weight: 600;
+	margin-bottom: 100px;
+}
+
+.sections .uvodni-text i{
+
+	font-size: 80px; 
+  	color: #f78769;
+}
+
+.prevod{
+	padding: 0 250px;
+}
 
 .prevod p {
 	margin-top: 40px;
@@ -1040,6 +1082,8 @@ p.vite-ze{
 	padding: 20px;
 	border-radius: 20px;
 	margin: 0px;
+	width: 90%;
+	margin-bottom: 30px !important;
 }
 
 .prevod p:nth-child(4) {
@@ -1050,7 +1094,7 @@ p.vite-ze{
 	margin-left: 60px;
 }
 
-.prevod strong, .odstavec strong{
+.prevod strong, .odstavec strong, .uvodni-text strong{
 	color: #f78769;
 }
 
@@ -1065,15 +1109,23 @@ p.vite-ze{
 	}
   }
   
-  .prevod .odstavec {
+.section-portfolio, #centre {
 	opacity: 0;
 	transition: opacity 0.5s ease-out;
-  }
+}
   
-  /* Třída pro aktivaci animace */
-  .prevod .odstavec.show {
-	animation: slideInRight 0.8s ease-out forwards;
-  }
 
+.section-portfolio.show, #centre {
+	animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.prevod .odstavec{
+	opacity: 0;
+	transition: opacity 0.5s ease-out;
+}
+  
+.prevod .odstavec.show{
+	animation: fadeInRight 0.8s ease-out forwards;
+}
 
 

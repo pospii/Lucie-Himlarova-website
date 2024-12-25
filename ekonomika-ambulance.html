@@ -126,11 +126,16 @@
       <div class="row">
         <div class="col-12">
 
-          <div class="section-title">
-            <p><strong>Pomohu Vám nastavit správnost a komplexnost vykázaných dokladů a zlepšit podmínky úhrad ze strany
-                pojišťoven. Má činnost zahrnuje následující portfolio služeb.
-              </strong></p><br><br>
+          <div class="sections">
+            <div class="uvodni-text">
+            <p>Pomohu Vám nastavit <strong>správnost</strong> a <strong>komplexnost</strong> vykázaných dokladů a <strong>zlepšit podmínky</strong> úhrad ze strany
+                pojišťoven.<br>Má činnost zahrnuje následující portfolio služeb.
+              </p>
+              <i class="icofont-swoosh-down"></i>
+              <br><br>
+            </div>
             
+            <div class="section-portfolio">
               <div class="odstavec">
               <h2>Roční vyúčtování</h2>
               <ul>
@@ -146,7 +151,14 @@
               <img class="lazy" data-src="img/vyúčtováníVZP.jpg" alt="">
               </div>
             </div>
-            <div class="odstavec">
+          </div>
+          <div class="section-portfolio">
+            <div class="images" id="section2">
+              <div class="image-container">
+              <img class="lazy" data-src="img/Zúčtovací zpráva.jpg" alt="">
+              <img class="lazy" data-src="img/portalZP.jpg" alt="">
+              </div>
+            </div><div class="odstavec">
               <h2>Portál zdravotních pojišťoven</h2>
               <ul>
                 <li>Pravidelné odeslání řádných dávek</li>
@@ -156,13 +168,9 @@
               <p><i>Pracuji např. s programy <strong>SmartMEDIX</strong>, <strong>Medicus</strong> a
                   <strong>Amicus</strong></i></p>
             </div>
-            <div class="images" id="section2">
-              <div class="image-container">
-              <img class="lazy" data-src="img/Zúčtovací zpráva.jpg" alt="">
-              <img class="lazy" data-src="img/portalZP.jpg" alt="">
-              </div>
+            
             </div>
-            <div class="odstavec">
+            <div class="odstavec" id="centre">
               <h2>Písemnosti</h2>
               <ul>
                 <li>Žádost o navýšení hodnoty PURO</li>
@@ -338,6 +346,26 @@
     // Inicializace pro obě sekce
     initializeImageSection('section1');
     initializeImageSection('section2');
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const odstavce = document.querySelectorAll(".section-portfolio");
+
+      function checkVisibility() {
+        const triggerBottom = window.innerHeight / 5 * 2;
+
+        odstavce.forEach((odstavec) => {
+          const boxTop = odstavec.getBoundingClientRect().top;
+
+          if (boxTop < triggerBottom) {
+            odstavec.classList.add("show");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", checkVisibility);
+      checkVisibility(); // Spuštění při načtení stránky
+    });
   </script>
 </body>
 

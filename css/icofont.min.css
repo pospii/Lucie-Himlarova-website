@@ -13,7 +13,7 @@
 }
 
 [class*=" icofont-"], [class^=icofont-] {
-    font-family: 'IcoFont' !important;
+    font-family: IcoFont !important;
     speak: none;
     font-style: normal;
     font-weight: 400;
@@ -77,6 +77,18 @@
 
 .icofont-check:before {
     content: "\eed8"
+}
+
+.icofont-hand-drawn-down:before {
+    content: "\ea86"
+}
+
+.icofont-swoosh-down:before {
+    content: "\eac2"
+}
+
+.icofont-hand-drawn-alt-down:before {
+    content: "\ea82"
 }
 
 [class*=" icofont-"].icofont-duotone, [class^=icofont-].icofont-duotone {
