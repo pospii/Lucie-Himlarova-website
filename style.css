@@ -462,7 +462,7 @@ body {
 }
 
 .fun-facts {
-	background: url('img/bread-bg.jpg');
+	background: url('img/zajimavosti-pozadi.webp');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -720,6 +720,7 @@ body {
 	text-align: center;
 	background: #fff;
 	border-top: 1px solid #eee;
+	height: 55vh;
 }
 
 .error-page .error-inner {

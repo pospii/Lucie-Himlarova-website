@@ -1,7 +1,7 @@
 
 window.onload = function(){
  const images = [
-    "img/uvod_kopie_upravena.jpeg",
+    "img/lucie_himlarova_uvod_prvni.jpeg",
     "img/uvod_druha.jpeg",
   ];
 
@@ -21,6 +21,6 @@ window.onload = function(){
     setInterval(changeBackground, 7000);
   } else {
     // Nastavení jiného obrázku pro malé obrazovky
-    slider.style.backgroundImage = `url('img/uvod_kopie.jpeg')`;
+    slider.style.backgroundImage = `url('img/lucie_himlarova_uvod_m.webp')`;
   }
 }
