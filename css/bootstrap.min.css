@@ -103,11 +103,12 @@
 html {
     font-family: sans-serif;
     line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; 
+    text-size-adjust: 100%;
     -ms-overflow-style: scrollbar;
-    -webkit-tap-highlight-color: transparent
+    -webkit-tap-highlight-color: transparent;
 }
+
 
 @-ms-viewport {
     width: device-width
@@ -238,8 +239,9 @@ a {
     color: #007bff;
     text-decoration: none;
     background-color: transparent;
-    -webkit-text-decoration-skip: objects
+    text-decoration-skip-ink: auto;
 }
+
 
 a:hover {
     color: #0056b3;
@@ -357,7 +359,8 @@ select {
 [type=submit],
 button,
 html [type=button] {
-    -webkit-appearance: button
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 [type=button]::-moz-focus-inner,
@@ -378,7 +381,8 @@ input[type=date],
 input[type=datetime-local],
 input[type=month],
 input[type=time] {
-    -webkit-appearance: listbox
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 textarea {
@@ -416,7 +420,8 @@ progress {
 
 [type=search] {
     outline-offset: -2px;
-    -webkit-appearance: none
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 [type=search]::-webkit-search-cancel-button,
@@ -1882,11 +1887,9 @@ pre code {
         display: block;
         width: 100%;
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        -ms-overflow-style: -ms-autohiding-scrollbar
     }
     .table-responsive-sm.table-bordered {
-        border: 0
+        border: 0;
     }
 }
 
@@ -1895,11 +1898,9 @@ pre code {
         display: block;
         width: 100%;
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        -ms-overflow-style: -ms-autohiding-scrollbar
     }
     .table-responsive-md.table-bordered {
-        border: 0
+        border: 0;
     }
 }
 
@@ -1908,11 +1909,9 @@ pre code {
         display: block;
         width: 100%;
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        -ms-overflow-style: -ms-autohiding-scrollbar
     }
     .table-responsive-lg.table-bordered {
-        border: 0
+        border: 0;
     }
 }
 
@@ -1921,11 +1920,9 @@ pre code {
         display: block;
         width: 100%;
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        -ms-overflow-style: -ms-autohiding-scrollbar
     }
     .table-responsive-xl.table-bordered {
-        border: 0
+        border: 0;
     }
 }
 
@@ -1933,9 +1930,8 @@ pre code {
     display: block;
     width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar
 }
+
 
 .table-responsive.table-bordered {
     border: 0
@@ -5224,7 +5220,8 @@ button.close {
     padding: 0;
     background: 0 0;
     border: 0;
-    -webkit-appearance: none
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .modal-open {

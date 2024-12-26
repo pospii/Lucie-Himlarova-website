@@ -116,6 +116,7 @@ html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	-webkit-appearance: button;
+	appearance: button;
 	cursor: pointer;
 }
 button[disabled],
@@ -593,7 +594,7 @@ Preloader Area CSS
 .pagination .pagination-list li a i{
 	font-size:15px;
 }
-.pagination .pagination-list li a i{}
+
 .blog-grids.pagination{
 	margin-top:50px;
 	text-align:center;
@@ -1031,37 +1032,39 @@ object {
         -webkit-transform: scale(0.2, 0.2);
         transform: scale(0.2, 0.2);
         opacity: 0;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0); /* Pro kompatibilitu se starším IE */
     }
     50% {
         opacity: 0.9;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+        filter: alpha(opacity=90); /* Pro kompatibilitu se starším IE */
     }
     100% {
         -webkit-transform: scale(0.9, 0.9);
         transform: scale(0.9, 0.9);
         opacity: 0;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0); /* Pro kompatibilitu se starším IE */
     }
 }
+
 @keyframes waves {
     0% {
         -webkit-transform: scale(0.2, 0.2);
         transform: scale(0.2, 0.2);
         opacity: 0;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0); /* Pro kompatibilitu se starším IE */
     }
     50% {
         opacity: 0.9;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+        filter: alpha(opacity=90); /* Pro kompatibilitu se starším IE */
     }
     100% {
         -webkit-transform: scale(0.9, 0.9);
         transform: scale(0.9, 0.9);
         opacity: 0;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0); /* Pro kompatibilitu se starším IE */
     }
 }
+
 
 
 
