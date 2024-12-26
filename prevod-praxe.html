@@ -283,26 +283,7 @@
   <!-- Main JS -->
   <script src="js/main.js"></script>
   <script src="js/slideshow.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const odstavce = document.querySelectorAll(".prevod .odstavec");
-
-      function checkVisibility() {
-        const triggerBottom = window.innerHeight / 5 * 4;
-
-        odstavce.forEach((odstavec) => {
-          const boxTop = odstavec.getBoundingClientRect().top;
-
-          if (boxTop < triggerBottom) {
-            odstavec.classList.add("show");
-          }
-        });
-      }
-
-      window.addEventListener("scroll", checkVisibility);
-      checkVisibility(); // Spuštění při načtení stránky
-    });
-  </script>
+  <script src="js/animace.js"></script>
 
 </body>
 
