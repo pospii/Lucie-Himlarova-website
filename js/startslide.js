@@ -13,9 +13,14 @@ window.onload = function(){
     slider.style.backgroundImage = `url(${images[currentIndex]})`;
   }
 
-  // První nastavení pozadí
-  slider.style.backgroundImage = `url(${images[currentIndex]})`;
+  if (window.innerWidth > 620) {
+    // První nastavení pozadí
+    slider.style.backgroundImage = `url(${images[currentIndex]})`;
 
-  // Nastavení intervalu pro změnu každých 7 sekund
-  setInterval(changeBackground, 7000);
+    // Nastavení intervalu pro změnu každých 7 sekund
+    setInterval(changeBackground, 7000);
+  } else {
+    // Nastavení jiného obrázku pro malé obrazovky
+    slider.style.backgroundImage = `url('img/uvod_kopie.jpeg')`;
+  }
 }

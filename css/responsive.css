@@ -8,7 +8,21 @@
 	.contact-us img {
 		padding: 100px 20px 100px 0;
 	}
-
+	.header .logo a{
+		font-size: 26px;
+	}
+	.fun-facts.section {
+		padding: 100px 40px;
+	}
+	.boxik .odstavec{
+		width: 60%;
+	}
+	.prevod{
+		padding: 0 90px;
+	}
+	.prevod .odstavec{
+		width: 90%;
+	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -30,6 +44,39 @@
 
 	.section-title p {
 		font-size: 15px;
+	}
+
+	.sections{
+		margin-bottom: 35px;
+		padding: 0;
+	}
+
+	.boxik .odstavec{
+		width: 80%;
+	}
+
+	.section-portfolio{
+		padding: 0;
+		gap: 30px;
+	}
+
+	.images{
+		height: 50%;
+	}
+
+	.prevod{
+		padding: 0 70px;
+	}
+	.prevod .odstavec{
+		width: 90%;
+	}
+
+	.header .logo{
+		margin-top: 20px;
+	}
+
+	.header .logo a{
+		font-size: 18px;
 	}
 
 	.btn {
@@ -185,7 +232,7 @@
 	}
 
 	.fun-facts.section {
-		padding: 70px 0;
+		padding: 70px 40px;
 	}
 
 	.fun-facts .single-fun {
@@ -232,8 +279,12 @@
 
 	.slideshow-container {
 		width: 100%;
-		height: 170px;
+		height: auto;
 		margin-top: 30px;
+	}
+
+	.uvodni-text {
+		padding: 0;
 	}
 }
 
@@ -418,7 +469,7 @@
 		padding: 50px 0px;
 	}
 
-	.section-title {
+	.section-title, .sections {
 		margin-bottom: 30px;
 		padding: 0px 20px;
 	}
@@ -430,6 +481,37 @@
 
 	.section-title p {
 		font-size: 15px;
+	}
+
+	.sections{
+		margin-bottom: 35px;
+		padding: 0;
+	}
+
+	.uvodni-text{
+		padding: 0 15px;
+	}
+
+	.boxik .odstavec{
+		width: auto;
+	}
+
+	.section-portfolio{
+		padding: 0;
+		gap: 20px;
+		
+	}
+
+	.images{
+		height: 50%;
+		width: 100%;
+	}
+
+	.prevod{
+		padding: 0 10px;
+	}
+	.prevod .odstavec{
+		width: 90%;
 	}
 
 	.breadcrumbs {
@@ -646,7 +728,7 @@
 	}
 
 	.slideshow-container {
-		height: 190px;
+		height: auto;
 		margin-top: 30px;
 	}
 
@@ -657,7 +739,7 @@
 		padding: 50px 0px;
 	}
 
-	.section-title {
+	.section-title, .sections {
 		margin-bottom: 30px;
 		padding: 0px 20px;
 	}
@@ -667,8 +749,31 @@
 		margin-bottom: 10px;
 	}
 
-	.section-title p {
+	.section-title p{
 		font-size: 15px;
+	}
+
+	.section-portfolio{
+		flex-direction: column-reverse;
+	}
+
+	.boxik .odstavec{
+		width: auto;
+	}
+
+	.boxik .sections .odstavec:last-child{
+		margin-bottom: 30px;
+	}
+
+	.image-container{
+		margin-bottom: 50px;
+	}
+
+	.prevod{
+		padding: 0;
+	}
+	.prevod .odstavec{
+		width: 80%;
 	}
 
 	.btn {
