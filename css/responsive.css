@@ -8,9 +8,6 @@
 	.contact-us img {
 		padding: 100px 20px 100px 0;
 	}
-	.header .logo a{
-		font-size: 26px;
-	}
 	.fun-facts.section {
 		padding: 100px 40px;
 	}
@@ -76,7 +73,12 @@
 	}
 
 	.header .logo a{
-		font-size: 18px;
+		font-size: 26px;
+	}
+
+	.foto-nav{
+		height: 0;
+		width: 0;
 	}
 
 	.btn {
@@ -308,6 +310,11 @@
 
 	.header-inner .logo {
 		width: 300px;
+	}
+
+	.foto-nav{
+		height: 0;
+		width: 0;
 	}
 
 	.slicknav_menu {
