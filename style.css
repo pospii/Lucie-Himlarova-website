@@ -204,6 +204,7 @@ body {
 
 .foto-nav img{
 	height: 74px;
+	width: auto;
 	margin-left: 90px;
 }
 

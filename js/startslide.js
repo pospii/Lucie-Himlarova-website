@@ -1,8 +1,8 @@
 
 window.onload = function(){
  const images = [
-    "img/lucie_himlarova_uvod_prvni.jpeg",
-    "img/uvod_druha.jpeg",
+    "img/lucie_himlarova_uvod_prvni.webp",
+    "img/uvod_druha.webp",
   ];
 
   let currentIndex = 0;
