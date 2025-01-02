@@ -796,9 +796,11 @@ body {
 
 .success {
     color: green;
+	margin: 30px;
 }
 .error {
     color: red;
+	margin: 30px;
 }
 
 
