@@ -202,7 +202,7 @@ body {
 	box-shadow: 0px -3px 20px 0px #ffd6cb
 }
 
-.foto-nav img{
+.foto-nav img {
 	height: 74px;
 	width: auto;
 	margin-left: 90px;
@@ -549,7 +549,7 @@ body {
    Start Contact Us CSS
 ===========================*/
 .contact-us .inner {
-	box-shadow: 0px 0px 10px #00000024;
+	box-shadow: 0 9px 37px #ffd6cb;
 	border-radius: 15px;
 	overflow: hidden;
 
@@ -896,7 +896,7 @@ body {
 
 /* slideNav */
 
-#dole{
+#dole {
 	box-shadow: 0px 5px 20px 0px #ffd6cb;
 }
 
@@ -912,15 +912,16 @@ body {
 .mySlides {
 	display: none;
 	text-align: center;
-	
+
 }
+
 .mySlides p {
 	font-weight: 400;
 	font-size: 18px;
 	font-style: italic;
 }
 
-p.vite-ze{
+p.vite-ze {
 	color: #717171;
 	font-size: 18px;
 	font-weight: 600;
@@ -937,7 +938,6 @@ p.vite-ze{
 	.slideshow-container {
 		width: 100%;
 	}
-
 }
 
 .boxik .sections {
@@ -945,7 +945,7 @@ p.vite-ze{
 	text-align: justify;
 }
 
-.boxik .sections  h2 {
+.boxik .sections h2 {
 	font-size: 23px;
 	text-transform: none;
 	text-align: left;
@@ -954,6 +954,7 @@ p.vite-ze{
 	position: relative;
 	color: #2C2D3F;
 }
+
 .boxik .sections p {
 	font-size: 17px;
 	color: #555;
@@ -967,7 +968,7 @@ p.vite-ze{
 	margin-bottom: 80px;
 }
 
-.boxik .odstavec{
+.boxik .odstavec {
 	width: 50%;
 	padding: 40px;
 	box-shadow: 0 9px 37px #ffd6cb;
@@ -988,31 +989,33 @@ p.vite-ze{
 .boxik .sections ul li {
 	font-size: 17px;
 	font-weight: 400;
-	padding-left: 25px; /* Prostor pro ikonu vlevo od textu */
-  text-indent: -33px; /* Zarovná text, aby se vyhnul ikoně */
-  line-height: 1.8em;
-  text-align: left;
+	padding-left: 25px;
+	/* Prostor pro ikonu vlevo od textu */
+	text-indent: -33px;
+	/* Zarovná text, aby se vyhnul ikoně */
+	line-height: 1.8em;
+	text-align: left;
 }
 
 .boxik .sections ul li::before {
 	content: "\eed8";
 	font-family: "IcoFont";
 	font-size: 23px;
-	margin-right: 10px; 
-  	color: #f78769; 
+	margin-right: 10px;
+	color: #f78769;
 }
 
-.section-portfolio{
+.section-portfolio {
 	display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    gap: 50px;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	gap: 50px;
 	height: 70vh;
 	margin-bottom: 50px;
 }
 
-#centre{
+#centre {
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -1025,13 +1028,14 @@ p.vite-ze{
 	height: 50vh;
 	background-color: white;
 }
-  
+
 .image-container {
 	width: 90%;
 	height: 100%;
 	position: relative;
 	overflow: hidden;
 }
+
 .image-container img {
 	width: 100%;
 	height: auto;
@@ -1041,30 +1045,30 @@ p.vite-ze{
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 }
+
 .image-container img.active {
 	opacity: 1;
-  } 
+}
 
-.uvodni-text{
+.uvodni-text {
 	padding: 0 170px;
 	margin: 150px auto 70px;
 	text-align: center;
 }
 
-.sections .uvodni-text p{
+.sections .uvodni-text p {
 	font-size: 22px;
 	line-height: 1.4em;
 	font-weight: 600;
 	margin-bottom: 100px;
 }
 
-.sections .uvodni-text i{
-
-	font-size: 80px; 
-  	color: #f78769;
+.sections .uvodni-text i {
+	font-size: 80px;
+	color: #f78769;
 }
 
-.prevod{
+.prevod {
 	padding: 0 250px;
 }
 
@@ -1075,13 +1079,13 @@ p.vite-ze{
 	line-height: 1.6em;
 }
 
-.prevod p:first-child{
+.prevod p:first-child {
 	margin-top: 80px;
 	margin-bottom: 80px;
 	line-height: 1.9em;
 }
 
-.prevod b{
+.prevod b {
 	font-size: 18.5px;
 }
 
@@ -1102,38 +1106,50 @@ p.vite-ze{
 	margin-left: 60px;
 }
 
-.prevod strong, .odstavec strong, .uvodni-text strong{
+.prevod strong, .odstavec strong, .uvodni-text strong {
 	color: #f78769;
+}
+
+.prevod a {
+	text-decoration: underline;
+	font-weight: bold;
+	/* Důraz */
+	transition: color 0.2s ease;
+	/* Hladký přechod při najetí */
+}
+
+.prevod a:hover {
+	color: #f78769;
+	text-decoration: none;
 }
 
 @keyframes slideInRight {
 	from {
-	  transform: translateX(100%);
-	  opacity: 0;
+		transform: translateX(100%);
+		opacity: 0;
 	}
+
 	to {
-	  transform: translateX(0);
-	  opacity: 1;
+		transform: translateX(0);
+		opacity: 1;
 	}
-  }
-  
+}
+
 .section-portfolio, #centre {
 	opacity: 0;
 	transition: opacity 0.5s ease-out;
 }
-  
+
 
 .section-portfolio.show, #centre {
 	animation: fadeInUp 0.8s ease-out forwards;
 }
 
-.prevod .odstavec{
+.prevod .odstavec {
 	opacity: 0;
 	transition: opacity 0.5s ease-out;
 }
-  
-.prevod .odstavec.show{
+
+.prevod .odstavec.show {
 	animation: fadeInRight 0.8s ease-out forwards;
 }
-
-
