@@ -362,7 +362,7 @@ body {
 	bottom: -30px;
 }
 
-.schedule .single-schedule h4 {
+.schedule .single-schedule h2 {
 	font-size: 22px;
 	font-weight: 600;
 	display: inline-block;
@@ -863,7 +863,7 @@ body {
 	padding-left: 8px;
 }
 
-.footer .single-footer h2 {
+.footer .single-footer h3 {
 	color: #fff;
 	font-size: 20px;
 	font-weight: 600;
@@ -872,7 +872,7 @@ body {
 	position: relative;
 }
 
-.footer .single-footer h2::before {
+.footer .single-footer h3::before {
 	position: absolute;
 	content: "";
 	left: 0;
