@@ -204,7 +204,7 @@ body {
 
 .foto-nav img {
 	height: 74px;
-	width: auto;
+	width: 148.5px;
 	margin-left: 90px;
 }
 
@@ -448,6 +448,11 @@ body {
 
 .Feautes.testimonial-page {
 	padding-top: 100px;
+}
+
+.Feautes img{
+	height: 24px;
+    width: 48px;
 }
 
 /*=============================
