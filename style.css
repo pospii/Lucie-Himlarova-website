@@ -794,6 +794,14 @@ body {
 	color: #fff;
 }
 
+.success {
+    color: green;
+}
+.error {
+    color: red;
+}
+
+
 /*===========================
 	End Mail Success CSS
 =============================*/

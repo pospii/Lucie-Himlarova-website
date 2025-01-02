@@ -155,7 +155,7 @@
                   Jestli máte jakékoliv otázky, neváhejte mě kontaktovat pomocí formuláře níže.
                 </p>
                 <!-- Form -->
-                <form class="form" method="post" action="mail/mail.php">
+                <form class="form" id="contactForm">
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group">
@@ -198,6 +198,7 @@
             </div>
           </div>
         </div>
+        <div id="formMessage"></div>
         <div class="contact-info">
           <div class="row">
             <!-- single-info -->
@@ -383,5 +384,49 @@
       <!-- Main JS -->
       <script src="js/main.js"></script>
       <script src="js/slideshow.js"></script>
+      <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Zabráníme standardnímu odeslání formuláře
+        
+            // Získání hodnot z formuláře
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+        
+            // Vytvoření objektu s daty
+            var formData = {
+                name: name,
+                email: email,
+                phone: phone,
+                subject: subject,
+                message: message
+            };
+        
+            // Odeslání dat pomocí fetch API
+            fetch('mail.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                var formMessage = document.getElementById('formMessage');
+                if (data.success) {
+                    formMessage.innerHTML = '<p class="success">Zpráva byla úspěšně odeslána.</p>';
+                    document.getElementById('contactForm').reset(); // Reset formuláře
+                } else {
+                    formMessage.innerHTML = '<p class="error">Došlo k chybě při odesílání zprávy. Zkuste to prosím znovu.</p>';
+                }
+            })
+            .catch(error => {
+                document.getElementById('formMessage').innerHTML = '<p class="error">Došlo k chybě při odesílání zprávy. Zkuste to prosím znovu.</p>';
+            });
+        });
+        </script>
+        
   </body>
 </html>
