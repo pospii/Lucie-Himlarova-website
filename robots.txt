@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Sitemap: https://kancelarlekare.cz/sitemap.xml
+
