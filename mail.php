@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Nastavení e-mailu
-    $to = 'luciehimlarova@kancelarlekare.cz'; // Cílový e-mail
+    $to = 'lucie.himlarova@kancelarlekare.cz'; // Cílový e-mail
     $email_subject = "Nová zpráva z formuláře: " . $input['subject'];
     $email_body = "
     <html>
@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $headers .= "Reply-To: " . $input['email'] . "\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
-    $return_path = "-f luciehimlarova@kancelarlekare.cz";
+    $return_path = "-f lucie.himlarova@kancelarlekare.cz";
 
     // Odeslání e-mailu
     if (mail($to, $email_subject, $email_body, $headers, $return_path)) {
