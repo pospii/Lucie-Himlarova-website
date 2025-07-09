@@ -92,6 +92,14 @@
     content: "\ea82"
 }
 
+.icofont-hospital:before {
+    content: "\ec22"
+}
+
+.icofont-briefcase:before {
+    content: "\eec2"
+}
+
 [class*=" icofont-"].icofont-duotone, [class^=icofont-].icofont-duotone {
     position: relative
 }

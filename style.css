@@ -1030,6 +1030,11 @@ p.vite-ze {
 	margin-bottom: 50px;
 }
 
+.mensi-odsazeni{
+	margin-bottom: 10px;
+	height: fit-content;
+}
+
 #centre {
 	margin-right: auto;
 	margin-left: auto;
