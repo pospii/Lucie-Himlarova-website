@@ -26,6 +26,16 @@
 
   <!-- Favicon -->
   <link rel="icon" href="img/logo-favicon.webp" />
+  <link rel="canonical" href="https://kancelarlekare.cz/prevod-praxe-na-sro.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="cs_CZ" />
+  <meta property="og:site_name" content="Kancelář Lékaře | Lucie Himlarová" />
+  <meta property="og:title" content="Převod lékařské praxe na s.r.o. | Lucie Himlarová" />
+  <meta property="og:description" content="Převod lékařské praxe na s.r.o. Sepsání zakladatelské listiny, příprava provozního řádu, komunikace s úřady a notářskými službami, zaslání žádosti na zdravotní pojišťovny." />
+  <meta property="og:url" content="https://kancelarlekare.cz/prevod-praxe-na-sro.html" />
+  <meta property="og:image" content="https://kancelarlekare.cz/img/kancelar_lekare_logo.webp" />
+  <meta property="og:image:alt" content="Logo Kancelář Lékaře Lucie Himlarová" />
 
   <link rel="stylesheet" href="css/fonts.css">
   <!-- Bootstrap CSS -->
@@ -43,6 +53,7 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Přeskočit na obsah</a>
   <!-- Preloader -->
   <div class="preloader">
     <div class="loader">
@@ -80,11 +91,11 @@
               <!-- Main Menu -->
               <div class="main-menu">
                 <nav class="navigation">
-                  <ul class="nav menu">
-                    <li><a href="/">Úvod</a></li>
-                    <li>
-                      <a href="#">Služby <i class="icofont-rounded-down"></i></a>
-                      <ul class="dropdown">
+                  <ul class="nav menu" role="menubar">
+                    <li role="menuitem"><a href="/">Úvod</a></li>
+                    <li role="menuitem">
+                      <a href="#" aria-haspopup="true" aria-expanded="false">Služby <i class="icofont-rounded-down" aria-hidden="true"></i></a>
+                      <ul class="dropdown" role="menu">
                         <li><a href="konzultace-zaskoleni.html">Konzultace, zaškolení</a></li>
                         <li>
                           <a href="ekonomika-ambulance.html">Ekonomika ambulance</a>
@@ -111,7 +122,7 @@
   <!-- End Header Area -->
 
   <!-- Breadcrumbs -->
-  <div class="breadcrumbs overlay">
+  <div class="breadcrumbs overlay" id="main-content">
     <div class="container">
       <div class="bread-inner">
         <div class="row">
@@ -269,7 +280,7 @@
             <div class="copyright-content">
               <p>
                 © Copyright 2024-2026 |
-                <a href="https://pospi.tode.cz/" target="_blank" rel="noopener">Adam Pospíšek</a>
+                <a href="https://pospi.tode.cz/" target="_blank" rel="noopener noreferrer">Adam Pospíšek</a>
               </p>
             </div>
           </div>

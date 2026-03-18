@@ -22,6 +22,16 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <title>Kancelář Lékaře | Lucie Himlarová | Administrativa pro lékaře</title>
     <link rel="icon" href="img/logo-favicon.webp" />
+    <link rel="canonical" href="https://kancelarlekare.cz/" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="cs_CZ" />
+    <meta property="og:site_name" content="Kancelář Lékaře | Lucie Himlarová" />
+    <meta property="og:title" content="Kancelář Lékaře | Lucie Himlarová | Administrativa pro lékaře" />
+    <meta property="og:description" content="Ekonomika, administrativa a konzultace ve zdravotnictví pro lékaře a pobytová zařízení. Analýza zdravotní péče, zaškolení personálu, vyřízení písemností pro zdravotní pojišťovny a převod lékařské praxe na s.r.o." />
+    <meta property="og:url" content="https://kancelarlekare.cz/" />
+    <meta property="og:image" content="https://kancelarlekare.cz/img/kancelar_lekare_logo.webp" />
+    <meta property="og:image:alt" content="Logo Kancelář Lékaře Lucie Himlarová" />
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/icofont.min.css" />
@@ -32,6 +42,7 @@
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Přeskočit na obsah</a>
     <!-- Preloader -->
     <div class="preloader">
       <div class="loader">
@@ -72,13 +83,13 @@
                 <!-- Main Menu -->
                 <div class="main-menu">
                   <nav class="navigation">
-                    <ul class="nav menu">
-                      <li class="active"><a href="#">Úvod</a></li>
-                      <li>
-                        <a href="#"
-                          >Služby <i class="icofont-rounded-down"></i
+                    <ul class="nav menu" role="menubar">
+                      <li class="active" role="menuitem"><a href="#">Úvod</a></li>
+                      <li role="menuitem">
+                        <a href="#" aria-haspopup="true" aria-expanded="false"
+                          >Služby <i class="icofont-rounded-down" aria-hidden="true"></i
                         ></a>
-                        <ul class="dropdown">
+                        <ul class="dropdown" role="menu">
                           <li>
                             <a href="konzultace-zaskoleni.html"
                               >Konzultace, zaškolení</a
@@ -117,7 +128,7 @@
     <!-- End Header Area -->
 
     <!-- Slider Area -->
-    <section class="slider">
+    <section class="slider" id="main-content">
       <div class="hero-slider">
         <!-- Start Single Slider -->
         <div
@@ -434,7 +445,7 @@
               <div class="copyright-content">
                 <p>
                   © Copyright 2024-2026 |
-                  <a href="https://pospi.tode.cz/" target="_blank" rel="noopener"
+                  <a href="https://pospi.tode.cz/" target="_blank" rel="noopener noreferrer"
                     >Adam Pospíšek</a
                   >
                 </p>
@@ -465,5 +476,27 @@
     <script src="js/main.js"></script>
     <script src="js/slideshow.js"></script>
     <script src="js/startslide.js"></script>
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Kancelář Lékaře – Lucie Himlarová",
+      "url": "https://kancelarlekare.cz/",
+      "logo": "https://kancelarlekare.cz/img/kancelar_lekare_logo.webp",
+      "description": "Ekonomika, administrativa a konzultace ve zdravotnictví pro lékaře a pobytová zařízení. Analýza zdravotní péče, zaškolení personálu, vyřízení písemností pro zdravotní pojišťovny a převod lékařské praxe na s.r.o.",
+      "telephone": "+420605807238",
+      "email": "lucie.himlarova@kancelarlekare.cz",
+      "taxID": "69212988",
+      "areaServed": "CZ",
+      "availableLanguage": "cs",
+      "founder": {
+        "@type": "Person",
+        "name": "Ing. Lucie Himlarová, MBA",
+        "jobTitle": "Ekonomka ve zdravotnictví"
+      },
+      "sameAs": []
+    }
+    </script>
   </body>
 </html>
